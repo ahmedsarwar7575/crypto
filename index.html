@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypro Price App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo"><img src="images/CoinGecko Logo.svg" alt=""></div>
+                <div class="items"><ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Market</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">about Us</a></li>
+                </ul>
+            </div>
+                <div class="search">
+                    <input list="cryptos" id="cryptoInput" placeholder="select from dropdown">
+                    <button class="search-btn">Search</button>
+<datalist id="cryptos">
+    <option value="Bitcoin" id="bitcoin">
+    <option value="Ethereum" id="ethereum">
+    <option value="BinanceCoin" id="binancecoin">
+    <option value="Solana" id="solana">
+    <option value="Cardano" id="cardano">
+    <option value="XRP" id="xrp">
+    <option value="Dogecoin" id="dogecoin">
+    <option value="Tether" id="tether">
+    <option value="USDCoin" id="usdcoin">
+    <option value="Polkadot" id="polkadot">
+    <option value="Avalanche" id="avalanche">
+    <option value="Chainlink" id="chainlink">
+    <option value="Litecoin" id="litecoin">
+    <option value="BitcoinCash" id="bitcoincash">
+    <option value="Algorand" id="algorand">
+    <option value="Stellar" id="stellar">
+    <option value="Cosmos" id="cosmos">
+    <option value="ShibaInu" id="shibainu">
+    <option value="Crypto.comCoin" id="cryptocomcoin">
+    <option value="Polygon" id="polygon">
+    <option value="Filecoin" id="filecoin">
+    <option value="EthereumClassic" id="ethereumclassic">
+    <option value="VeChain" id="vechain">
+    <option value="Tron" id="tron">
+    <option value="BitcoinSV" id="bitcoinsv">
+    <option value="WrappedBitcoin" id="wrappedbitcoin">
+    <option value="ThetaNetwork" id="thetanetwork">
+    <option value="Tezos" id="tezos">
+    <option value="Neo" id="neo">
+    <option value="FTXToken" id="ftxtoken">
+    <option value="Klaytn" id="klaytn">
+    <option value="BitTorrent" id="bittorrent">
+    <option value="AxieInfinity" id="axieinfinity">
+    <option value="Decentraland" id="decentraland">
+    <option value="InternetComputer" id="internetcomputer">
+    <option value="Aave" id="aave">
+    <option value="BitcoinBEP2" id="bitcoinbep2">
+    <option value="Chiliz" id="chiliz">
+    <option value="Compound" id="compound">
+    <option value="Maker" id="maker">
+    <option value="SushiSwap" id="sushiswap">
+    <option value="Dash" id="dash">
+    <option value="Elrond" id="elrond">
+    <option value="BitcoinGold" id="bitcoingold">
+    <option value="PancakeSwap" id="pancakeswap">
+    <option value="HuobiToken" id="huobitoken">
+    <option value="Fantom" id="fantom">
+    <option value="TheGraph" id="thegraph">
+    <option value="CompoundDai" id="compounddai">
+    <option value="EnjinCoin" id="enjincoin">
+    <option value="HederaHashgraph" id="hederahashgraph">
+    <option value="Zcash" id="zcash">
+    <option value="Yearn.finance" id="yearnfinance">
+    <option value="Harmony" id="harmony">
+    <option value="BasicAttentionToken" id="basicattentiontoken">
+    <option value="Stacks" id="stacks">
+    <option value="Kusama" id="kusama">
+    <option value="Synthetix" id="synthetix">
+    <option value="Celo" id="celo">
+    <option value="ICON" id="icon">
+    <option value="Decred" id="decred">
+    <option value="Horizen" id="horizen">
+    <option value="OKB" id="okb">
+    <option value="Ontology" id="ontology">
+    <option value="Waves" id="waves">
+    <option value="ThetaFuel" id="thetafuel">
+    <option value="BitcoinDiamond" id="bitcoindiamond">
+    <option value="NEM" id="nem">
+    <option value="Qtum" id="qtum">
+    <option value="Siacoin" id="siacoin">
+    <option value="Zilliqa" id="zilliqa">
+    <option value="TrueUSD" id="trueusd">
+    <option value="Nano" id="nano">
+    <option value="OMGNetwork" id="omgnetwork">
+    <option value="0x" id="0x">
+    <option value="Terra" id="terra">
+    <option value="UMA" id="uma">
+    <option value="DecentralizedAccessibleContentChain" id="decentralizedaccessiblecontentchain">
+    <option value="PaxDollar" id="paxdollar">
+    <option value="TheSandbox" id="thesandbox">
+    <option value="Lisk" id="lisk">
+    <option value="BitcoinStandardHashrateToken" id="bitcoinstandardhashratetoken">
+    <option value="Ren" id="ren">
+    <option value="BitTorrentToken" id="bittorrenttoken">
+    <option value="renBTC" id="renbtc">
+    <option value="IOST" id="iost">
+    <option value="CurveDAOToken" id="curvedaotoken">
+    <option value="Balancer" id="balancer">
+    <option value="Arweave" id="arweave">
+    <option value="MinaProtocol" id="minaprotocol">
+    <option value="ReserveRightsToken" id="reserverightstoken">
+    <option value="OceanProtocol" id="oceanprotocol">
+    <option value="DigiByte" id="digibyte">
+    <option value="renDOGE" id="rendoge">
+    <option value="Loopring" id="loopring">
+    <option value="Holo" id="holo">
+    <option value="Golem" id="golem">
+    <option value="Audius" id="audius">
+    <option value="Civic" id="civic">
+    <option value="TerraUSD" id="terrausd">
+    <option value="VoyagerToken" id="voyagertoken">
+    <option value="TomoChain" id="tomochain">
+    <option value="Storj" id="storj">
+    <option value="PundiX" id="pundix">
+    <option value="EnergyWebToken" id="energywebtoken">
+    <option value="Ren" id="ren">
+</datalist>
+
+
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="front">
+       <div class="heading">
+        <h2 id="head1">Latest Prices of</h2>
+        <h1 id="head2">Crypto Coins</h1>
+        <p id="head3">Best Place to find the latest <br>Prices of crypto Coins.</p>
+       <div class="btn">
+        <button>About us</button>
+        <button>Learn More</button>
+        <div class="crypto-coin row seacrh-row">
+            <img src="images/CoinGecko Logo.svg" alt="">
+            <div class="srch">
+            <h2></h2><br>
+             <h3></h3>
+            </div>
+        </div>
+         </div>
+       </div>
+       <div class="image-main">
+        <img src="images/crypto-removebg-preview.png" alt="">
+       </div>
+    </div>
+
+
+    <div class="main-row01 main-row">
+        <div class="bitcoin row">
+            <img src="images/pngwing.com.png" alt="">
+            <div>
+            <h2>bitcoin</h2><br>
+             <h3></h3>
+            </div>
+        </div>
+        <div class="ethe row">
+            <img src="images/pngwing.com (1).png" alt="">
+            <div>
+            <h2>Ethereum</h2><br>
+             <h3></h3>
+            </div>
+        </div>
+        <div class="bnb row">
+            <img src="images/pngwing.com (3).png" alt="">
+            <div>
+            <h2>BNB</h2><br>
+             <h3></h3>
+            </div>
+        </div>
+        <div class="doge row">
+            <img src="images/pngwing.com (4).png" alt="">
+            <div>
+            <h2>DogeCoin</h2><br>
+             <h3></h3>
+            </div>
+        </div>
+    </div>
+        </div> 
+    </div>
+    </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
